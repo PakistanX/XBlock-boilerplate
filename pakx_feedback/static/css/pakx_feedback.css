@@ -1,0 +1,9 @@
+/* CSS for PakXFeedbackXBlock */
+
+.pakx_feedback_block .count {
+    font-weight: bold;
+}
+
+.pakx_feedback_block p {
+    cursor: pointer;
+}

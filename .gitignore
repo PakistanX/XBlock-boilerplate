@@ -1,0 +1,6 @@
+*~
+*.pyc
+/pakx_feedback_xblock.egg-info
+/dist
+/templates
+*.idea/
