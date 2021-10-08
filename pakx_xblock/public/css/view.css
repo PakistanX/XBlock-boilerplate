@@ -1,0 +1,86 @@
+/* CSS for pakx_block */
+
+.pakx_block .count {
+    font-weight: bold;
+}
+
+.pakx_block p {
+    cursor: pointer;
+}
+
+
+.pakx_block .button-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.pakx_block .hide {
+  display: none;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.pakx_block .logo-img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+  margin: -25px 0 0 -25px;
+}
+
+.pakx_block .transparent-bg {
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  z-index: 99;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.pakx_block .loading-bar {
+  width: 80px;
+  height: 80px;
+  margin: -40px 0 0 -40px;
+  top: 50%;
+  left: 50%;
+  box-sizing: border-box;
+
+  border: solid 5px #da1e24;
+  border-radius: 50%;
+  position: absolute;
+
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  -webkit-transition: all 0.5s ease-in;
+  -webkit-animation-name: rotate;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+
+  transition: all 0.5s ease-in;
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+

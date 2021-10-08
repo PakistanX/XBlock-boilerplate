@@ -76,7 +76,7 @@ PakXFeedbackXBlockEdit.prototype.toJSON = function (form) {
     var _PakXFeedbackXBlockEdit = this;
 //    TODO: Convert XBlock data to JSON here and add in the dict below
     var title = _PakXFeedbackXBlockEdit.VIEW.TITLE_ELEMENT.val();
-    return {title: title,}
+    return {title: title}
 }
 
 PakXFeedbackXBlockEdit.prototype.post = function (url, payload, config = undefined) {

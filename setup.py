@@ -24,20 +24,20 @@ def package_data(pkg, roots):
 
 
 setup(
-    name='pakx_feedback-xblock',
+    name='pakx_xblock-xblock',
     version='0.1',
-    description='pakx_feedback XBlock',   # TODO: write a better description.
+    description='pakx_xblock XBlock',   # TODO: write a better description.
     license='UNKNOWN',          # TODO: choose a license: 'AGPL v3' and 'Apache 2.0' are popular.
     packages=[
-        'pakx_feedback',
+        'pakx_xblock',
     ],
     install_requires=[
         'XBlock',
     ],
     entry_points={
         'xblock.v1': [
-            'pakx_feedback = pakx_feedback:PakXFeedbackXBlock',
+            'pakx_xblock = pakx_xblock:PakXXBlock',
         ]
     },
-    package_data=package_data("pakx_feedback", ["static", "public"]),
+    package_data=package_data("pakx_xblock", ["static", "public"]),
 )
