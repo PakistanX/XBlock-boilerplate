@@ -3,6 +3,12 @@ PakistanX XYZ
 
 This XBlock allows Learners to  
 
+Dev Notes
+------------
+Static assesets entries can be found in  `XBlockFragmentBuilderMixin`, which includes `static_js, static_js_init and template names`
+Fields for XBlock can be added in `XBlockFieldsMixin`
+Student view context can be updated in `ModalViewMixin`
+
 Installation
 ------------
 
@@ -31,12 +37,12 @@ Usage
 The PakistanX XYZ .... Add the PakistanX XYZ 
 component to a lesson, then click the `EDIT` button.
 
-![Studio View](/doc/imgs/studio-view.png)
+![Studio View](pakx_xblock/public/images/lms-view.png)
 
 Details here
 
 
-![LMS View](/doc/imgs/lms-view.png)
+![LMS View](pakx_xblock/public/images/studio-view.png)
 
 Details here
 

@@ -6,7 +6,7 @@ from xblock.fields import Scope
 from xblock.fields import String, Integer, Boolean
 
 
-class XBlockModelMixin:  # pylint: disable=too-few-public-methods
+class XBlockFieldsMixin:  # pylint: disable=too-few-public-methods
     """
     Handle data access for Image Modal XBlock instances
     """

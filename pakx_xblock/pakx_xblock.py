@@ -2,13 +2,13 @@
 
 from xblock.core import XBlock
 from pakx_xblock.utils import json_response
-from .XBlockFields import XBlockModelMixin
+from .XBlockFields import XBlockFieldsMixin
 from .views import ModalViewMixin
 
 
 
 # Edit the name of XBlock Class as per your requirement
-class PakXXBlock(XBlockModelMixin, ModalViewMixin, XBlock):
+class PakXXBlock(XBlockFieldsMixin, ModalViewMixin, XBlock):
     """
     TO-DO: document what your XBlock does.
     """
