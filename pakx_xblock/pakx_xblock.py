@@ -6,12 +6,20 @@ from .XBlockFields import XBlockFieldsMixin
 from .views import ModalViewMixin
 
 
-
 # Edit the name of XBlock Class as per your requirement
 class PakXXBlock(XBlockFieldsMixin, ModalViewMixin, XBlock):
     """
     TO-DO: document what your XBlock does.
     """
+
+    # TODO: Call this function as per requirement
+    def submit_grade(self):
+        """
+        Publish data for analytics purposes
+        """
+
+        self.runtime.publish(self, "grade", {'max_value': 1.0, 'value': 1.0})
+        return {'result': 'success'}
 
     @XBlock.handler
     def get_state(self, request, suffix=''):  # pylint: disable=unused-argument
