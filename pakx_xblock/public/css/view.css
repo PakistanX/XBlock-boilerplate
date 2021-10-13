@@ -1,4 +1,7 @@
 /* CSS for pakx_block */
+.pakx_block {
+    position: relative;
+}
 
 .pakx_block .count {
     font-weight: bold;

@@ -17,7 +17,7 @@ class XBlockFieldsMixin:  # pylint: disable=too-few-public-methods
     # TODO: Update Editable fields via Studio
     editable_fields = [
         'display_name',
-        'user_mako_template'
+        'use_mako_template'
     ]
 
     show_in_read_only_mode = True
@@ -30,9 +30,9 @@ class XBlockFieldsMixin:  # pylint: disable=too-few-public-methods
         help=_("This is the XBlock's display name"),
     )
 
-    user_mako_template = Boolean(
+    use_mako_template = Boolean(
         display_name=_('Use Mako Template'),
-        default=True,
+        default=False,
         scope=Scope.settings,
         help=_("Default Django Templating Engine is used"),
     )

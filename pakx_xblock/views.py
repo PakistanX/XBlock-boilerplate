@@ -27,7 +27,7 @@ class ModalViewMixin(
         context.update({
             'counter': self.count,
             'display_name': self.display_name,
-            'user_mako_template': self.user_mako_template,
+            'use_mako_template': self.use_mako_template,
             'logo_img': self.runtime.local_resource_url(self, 'public/images/logo.png'),
         })
         return context

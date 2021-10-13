@@ -78,7 +78,7 @@ class XBlockFragmentBuilderMixin:
         :return: rendered template
         """
         context = data.pop('context')
-        use_mako_template = context.pop('user_mako_template', False)
+        use_mako_template = context.pop('use_mako_template', False)
         template = data.pop('template', None)
         if template and not use_mako_template:
             return self.loader.render_django_template('templates/{}'.format(template), context=Context(context))
