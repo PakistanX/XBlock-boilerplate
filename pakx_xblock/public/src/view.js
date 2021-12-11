@@ -70,7 +70,7 @@ ModalView.prototype.postResults = function(handlerUrl, data, successCB = null, f
  */
 ModalView.prototype.isStudioMode = function() {
     _ModalView = this;
-    return (_ModalView.element.attr('data-runtime-class') === 'PreviewRuntime');
+    return typeof _ModalView.element.attr !== "undefined" && (_ModalView.element.attr('data-runtime-class') === 'PreviewRuntime');
 }
 
 /**
