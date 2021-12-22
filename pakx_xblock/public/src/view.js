@@ -69,8 +69,8 @@ ModalView.prototype.postResults = function(handlerUrl, data, successCB = null, f
  * @returns {boolean} False to stop event bubbling
  */
 ModalView.prototype.isStudioMode = function() {
-    _ModalView = this;
-    return typeof _ModalView.element.attr !== "undefined" && (_ModalView.element.attr('data-runtime-class') === 'PreviewRuntime');
+    // data-runtime-class is loaded when XBlock has loaded, doesn't work when studio page is refreshed
+    return typeof $(".nav-item.nav-course-tools")[0] !== 'undefined'
 }
 
 /**
